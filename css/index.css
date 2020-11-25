@@ -1,0 +1,16 @@
+ul li{
+    float:left;
+    list-style:none;
+    padding:2px auto;
+}
+#textColor{
+    color:purple;
+}
+footer{
+    background-color:purple;
+    color:white;
+    font-size :12px;
+}
+#pic{
+    width:1300px;
+}

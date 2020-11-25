@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div class="container">
+      <img id="pic"class="img-fluid" src="img/header.png">
+      
+      <img id="pic"class="img-fluid" src="img/Paris-2.jpg">
+      <div class="inThe_menu">
+            <ul class="nav">
+              <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+              <li class="nav-item"><a href="RoomService.html" class="nav-link">ROOM SERVICE</a></li>
+              <li class="nav-item"><a href="Specials.html" class="nav-link">SPECIALS</a></li>
+              <li class="nav-item"><a href="Reservations.html" class="nav-link">RESERVATIONS</a></li>
+              <li class="nav-item"><a href="Meetings&Events.html" class="nav-link">MEETING AND EVENTS</a></li>
+              <li class="nav-item"><a href="News.html" class="nav-link">NEWS</a></li>
+              <li class="nav-item"><a href="Contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+</div>     
+     
+    </div><!--end of container-->
+    <script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET","news.json",true);
+    var myData=this.responseText;
+    var data=JSON.parse(myData);
+    console.log(data.newsStories);
+    xhttp.send();
+    
+
+
+
+
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootsrap.js"></script>
+    <script src="js/popper.js"></script>
+</body>
+</html>
